@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'dm_sansregular';
+  src: url('/fonts/dmsans-regular-webfont.eot');
+  src: url('/fonts/dmsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/dmsans-regular-webfont.woff2') format('woff2'),
+  url('/fonts/dmsans-regular-webfont.woff') format('woff'),
+  url('/fonts/dmsans-regular-webfont.ttf') format('truetype'),
+  url('/fonts/dmsans-regular-webfont.svg#dm_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dm_sansbold';
+  src: url('/fonts/dmsans-bold-webfont.eot');
+  src: url('/fonts/dmsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/dmsans-bold-webfont.woff2') format('woff2'),
+  url('/fonts/dmsans-bold-webfont.woff') format('woff'),
+  url('/fonts/dmsans-bold-webfont.ttf') format('truetype'),
+  url('/fonts/dmsans-bold-webfont.svg#dm_sansbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Colours 
+$white:#fff;
+$black:#000;
+$purple:#6F3D9C;
+$pink:#C3007D;
+$red:#AC2331;
+$green:#8EC600;
+$dark_grey:#0F1222;
+$grey:#7C868E;
+$gutter:60px;
+$text_color:#44444F;
+
+
+// fonts
+$font-regular: 'dm_sansregular', Helvetica, sans-serif;
+$font-bold: 'dm_sansbold', Helvetica, sans-serif;
+
+
+// Mixins
+@mixin box-sizing{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  -o-box-sizing: border-box; 
+  box-sizing: border-box;    
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin animaxn{
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.vertical_align {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+.inline_block{
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    vertical-align:top;
+}
+.display_table{
+    height:100%;
+    display:table;
+    width:100%;
+}
