@@ -1,0 +1,415 @@
+@media only screen and (min-width: 1600px){
+	header{
+		//background:yellow;
+	}
+	.wrap{
+		max-width: 80%;
+	}
+
+}//Max width 1920
+
+@media only screen and (max-width: 1920px){
+	header{
+		//background:black;
+	}
+}//Max width 1920
+
+@media only screen and (max-width: 1600px){
+	header{
+		//background:red;
+	}
+	.wrap {
+		max-width: 1300px;
+	}
+	.section_grid {
+		grid-template-columns: 670px 1fr;
+		grid-column-gap: 5rem;
+	}
+	.section:nth-of-type(odd){
+		.section_grid {
+			grid-template-columns: 1fr 670px;
+		}
+	}
+	.hero_banner{
+		padding:4rem 0;
+	}
+}//Max width 1600
+
+
+@media only screen and (max-width: 1366px){
+	header{
+		//background:mediumpurple;
+	}
+	.wrap {
+		max-width:none;
+		padding: 0 2rem;
+	}
+	.hero_banner{
+		padding:3rem 0;
+	}
+	.section{
+		padding:3rem 0;
+	}
+}//Max width 1280
+
+@media only screen and (max-width: 1280px){
+	header{
+		//background:blue;
+	}
+
+	.hero_banner{
+		.wrap{
+			grid-template-columns:460px 1fr;
+			grid-column-gap:4rem;
+		}
+	}
+	.sign_up_title, .section_title {
+		font-size: 2em;
+	}
+	.section_title{
+		max-width:700px;
+	}
+
+	.section_grid {
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 3rem;
+	}
+	.section:nth-of-type(odd){
+		.section_grid {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	.section {
+		padding:2rem 0;
+	}
+
+	.hero_banner {
+		padding: 2rem 0;
+	}
+
+	.top_footer{
+		.wrap {
+			grid-template-columns: 300px 1fr 1fr 1fr 1fr;
+			grid-column-gap: 2rem;
+		}
+	}
+	.section{
+		&.footerForm, &.with_faqs{
+			&:after{
+				display: none;
+			}
+		}
+	}
+
+}//Max width 1280
+
+
+@media only screen and (max-width: 1100px){
+	header{
+		//background:yellow;
+	}
+
+	.login_grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+
+	header{
+		height:80px;
+	}
+
+	.site_logo {
+		width: 130px;
+	}
+
+	.wv-topbar__menu-toggle{
+		display: flex;
+	}
+
+	.section {
+		padding: 2rem 0;
+	}
+
+	.main_menu{
+		display: none;
+	}
+
+
+}//Max width 1100
+
+
+@media only screen and (max-width: 960px){
+	header{
+		//background:purple;
+	}
+
+
+	.login_page{
+		height: auto;
+		&:after{
+			display: none;
+		}
+	}
+
+	.login_grid {
+		display: block;
+		padding:2rem 0;
+	}
+
+	.login_desc{
+		display: block;
+		margin-bottom:2rem;
+		h1{
+			font-size:2rem;
+			br{
+				display: none;
+			}
+		}
+	}
+
+	.features li h4{
+		font-size:1.1em;
+	}
+
+	.hero_banner{
+		&:before, &:after{
+			display: none;
+		}
+		.wrap {
+			display: block;
+		}
+	}
+	.hero_banner_image{
+		display: none;
+	}
+
+	.sign_up_title, .section_title {
+		font-size: 1.8em;
+	}
+	.section_desc{
+		h2{
+			font-size: 1.4rem;
+			line-height: 1.3;
+		}
+	}
+
+	.section{
+		&.footerForm, &.with_faqs{
+			&:before{
+				display: none;
+			}
+		}
+	}
+
+
+
+	.footer_form_grid {
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap:1rem;
+	}
+
+	.top_footer{
+		.wrap {
+			grid-template-columns: 300px 1fr 1fr;
+			.footer_column{
+				margin-bottom:2rem;
+			}
+		}
+	}
+	.top_footer, .bottom_footer {
+		padding: 2rem 0;
+	}
+}//max width 960
+
+@media only screen and (max-width: 768px){
+	header{
+		//background:green;
+	}
+
+	.faqs_options{
+		display: block;
+		li{
+			margin-bottom:1.5rem;
+		}
+	}
+
+	.faqs_options{
+		li{
+			padding:1.5rem;
+		}
+	}
+
+	.section_excerpt, .section_title {
+		margin-bottom: 2rem;
+	}
+
+	.wrap {
+		padding: 0 1.5rem;
+	}
+
+	.form_on_login {
+		padding: 1.5rem;
+	}
+
+	.sign_up_title, .section_title {
+		font-size: 1.5em;
+		line-height: 1.2;
+	}
+
+	.login_desc h1 {
+		font-size: 1.6rem;
+	}
+
+	.form_on_login .sign_up_title {
+		font-size: 1.5em;
+		line-height: 1.2;
+		max-width: none;
+	}
+
+	.section_grid {
+		display: block;
+	}
+
+	.section_img{
+		margin-bottom:2rem;
+		text-align: center;
+		img{
+			max-width:400px;
+		}
+	}
+
+	.section_desc{
+		h2 {
+			font-size: 1.2rem;
+		}
+	}
+
+	.testimonial_grid {
+		grid-template-columns: 150px 1fr;
+		grid-column-gap: 2rem;
+	}
+
+	.testimony_img{
+		&:after{
+			display: none;
+		}
+	}
+	.testimony_desc{
+		h4 {
+			font-size: 1em;
+		}
+	}
+
+	.footer_form_grid {
+		display: block;
+	}
+
+	.top_footer{
+		.wrap {
+			display: block;
+		}
+	}
+
+	.utility_menu{
+		display: none;
+	}
+
+
+}//max width 768
+
+
+@media only screen and (max-width: 500px){
+	header{
+		//background:deeppink;
+	}
+	.testimonial_grid {
+		display: block;
+	}
+	.testimony_img{
+		text-align: center;
+		margin-bottom:2rem;
+		img{
+			max-width:150px;
+		}
+	}
+	.form_on_login .sign_up_title {
+		font-size: 1.3em;
+	}
+}//max 500px
+
+
+@media only screen and (max-width: 330px){
+	header{
+		//background:orange;
+	}
+}//max 330px
+
+
+// Print Styles
+ 
+@media print {
+
+	* {
+		background: transparent !important; 
+		color: black !important; 
+		text-shadow: none !important; 
+		filter:none !important; 
+		-ms-filter: none !important; 
+	} 
+	
+	a, 
+	a:visited { 
+		text-decoration: underline; 
+	}
+	
+	a[href]:after { 
+		content: " (" attr(href) ")"; 
+	}
+	
+	abbr[title]:after { 
+		content: " (" attr(title) ")"; 
+	}
+	
+	.ir a:after, 
+	a[href^="javascript:"]:after, 
+	a[href^="#"]:after { 
+		content: ""; 
+	} 
+	
+	pre, 
+	blockquote { 
+		border: 1px solid #999; 
+		page-break-inside: avoid; 
+	}
+	
+	thead { 
+		display: table-header-group; 
+	}
+	
+	tr, 
+	img { 
+		page-break-inside: avoid; 
+	}
+	
+	img { 
+		max-width: 100% !important; 
+	}
+	
+	@page { 
+		margin: 0.5cm; 
+	}
+	
+	p, 
+	h2, 
+	h3 { 
+		orphans: 3; 
+		widows: 3; 
+	}
+	
+	h2, 
+	h3 { 
+		page-break-after: avoid; 
+	}
+	
+}
